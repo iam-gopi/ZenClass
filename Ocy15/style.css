@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+/* #parent {
+  /* background-color: red; */
+/* } */
+
+/* #child { */
+/* background-color: blue; */
+/*padding: 15px 20px;
+  margin: 15px;
+  border: 1px dashed red;
+} */
+
+/* button {
+  border: 0;
+  background-color: #00a313;
+  color: #fff;
+  padding: 15px 25px;
+  margin: 50px;
+  border-radius: 6px;
+} */
+
+/* #txt {
+  margin: 50px;
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 6px;
+  width: 200px;
+  color: blueviolet;
+} */
+/* button {
+  width: 30px;
+}
+
+#box {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  gap: 10px;
+} */
+
+nav {
+  background-color: bisque;
+  padding: 15px;
+  display: flex;
+  width: 100%;
+}
+div {
+  width: 30%;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  gap: 40px;
+}
+
+ul > li {
+  font-weight: 500;
+  font-size: 19px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#home {
+  background-color: red;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+ul li:hover {
+  background-color: red;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+}
