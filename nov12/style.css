@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-ff: "Poppins", sans-serif;
+  --primary-bg-color: #f5f6f6;
+  --logo-yellow: #f7df1e;
+  --blue-font-color: #73a7f1;
+  --orange-font-color: #fb9f77;
+  --primary-fs: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100%;
+  overflow-x: hidden;
+  font-family: var(--primary-ff);
+  font-size: var(--primary-fs);
+  background-color: var(--primary-bg-color);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+ul > li {
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+#more {
+  opacity: 1;
+}
+#social-icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  width: 30%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 1.4rem;
+  box-shadow: -1px 14px 21px -5px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: -1px 14px 21px -5px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: -1px 14px 21px -5px rgba(0, 0, 0, 0.33);
+  border-radius: 50%;
+}
+
+#logo {
+  background-color: var(--logo-yellow);
+  font-weight: 700;
+  padding: 1rem 0.1rem 0.1rem 0.7rem;
+  border-radius: 4px;
+}
+
+#btn {
+  font-weight: 700;
+  opacity: 0.6;
+  border: 1px solid #000;
+  padding: 0.5rem 0.7rem;
+  border-radius: 4px;
+}
+
+#header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+#header {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+#desc {
+  margin: 1rem 0;
+  font-weight: 700;
+  opacity: 0.5;
+  text-align: center;
+}
+
+#search-form {
+  display: flex;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+#type {
+  border: 1px solid #222;
+  padding: 0.3rem 0.8rem;
+  margin-right: 0.3rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#txt {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  width: 250px;
+  padding: 0.6rem;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+#second-nav {
+  display: flex;
+}
+
+#second-nav-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 60%;
+  font-weight: 600;
+}
+
+#image-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+#free {
+  color: var(--orange-font-color);
+}
+
+#premium {
+  color: var(--blue-font-color);
+}
+
+.card {
+  width: 12rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 12px 12px rgba(0, 0, 0, 0.19);
+}
+
+#card-title {
+  text-align: center;
+}
+
+#first-char {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+#remaining-char {
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+#download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-decoration: underline;
+  gap: 10px;
+}
+
+#card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+#footer_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+#next-page-container {
+  box-shadow: 2px 2px 12px 12px rgba(0, 0, 0, 0.19);
+}
+
+#next-button-bg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 0.7rem 1.7rem;
+  border-radius: 5px;
+}
+
+#arrow {
+  width: 1rem;
+}
+
+#page {
+  font-weight: 700;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+
+#hi {
+  background-color: rgb(219, 216, 216);
+  text-align: center;
+  padding: 0.1rem;
+  border: 1px solid #222;
+  opacity: 0.4;
+  border-radius: 3px;
+  font-size: 12px;
+  margin: 0 0.3rem;
+}
+
+#lo {
+  background-color: rgb(219, 216, 216);
+  text-align: center;
+  padding: 0.1rem;
+  border: 1px solid rgb(189, 186, 186);
+  border-radius: 3px;
+  font-size: 12px;
+  margin: 0 0.3rem;
+}
+
+#discover-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+#discover {
+  text-decoration: underline;
+}
+
+#img1 {
+  width: 1.7rem;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgb(169, 167, 167);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#img-conainer {
+  display: flex;
+  align-items: center;
+}
