@@ -1,6 +1,7 @@
 const createLabel = (text) => {
   let label = document.createElement("label");
   label.textContent = text;
+  label.classList.add("label");
   return label;
 };
 
@@ -9,6 +10,7 @@ const createTextBox = (type, id) => {
   txt.setAttribute("id", id);
   txt.setAttribute("type", type);
   txt.setAttribute("required", true);
+  txt.setAttribute("class", "txt");
 
   return txt;
 };
@@ -33,6 +35,7 @@ const formSubmitHandler = (event) => {
 
 let form = document.createElement("form");
 form.addEventListener("submit", formSubmitHandler);
+form.classList.add("form");
 
 let div = document.createElement("div");
 div.append(createLabel("Name"));
