@@ -1,0 +1,8 @@
+git clone <git url> --> used to get copy of a repository from git website to your local
+
+Now do all your changes in local copy. 
+
+git status --> shows you the changes
+git add . --> add all the changes to the git (just introducing git about the changes you did with local copy)
+git commit -m "<any message>" --> locally saves the changes. keep in mind, only commited changes can push to server 
+git push --> pushing your changes from local machine to server
