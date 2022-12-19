@@ -1,0 +1,13 @@
+sync -> always in sync
+async -> no wait, that latest execution i s called as callback
+callback - pass a function as arguement to anther function ex: settimeout
+
+thread present within a process 
+
+paging, context switching - not mandatory 
+
+thread -> is a light weight process
+
+node js -> is a single threaded 
+event loop - which helps me to achieve async behaviour in js code with the help of brower api  Q and event Q
+
