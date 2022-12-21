@@ -22,3 +22,31 @@ const newPromise = Promise.reject({ status: "success1" });
 Promise.all([promise, newPromise])
   .then((data) => console.log(data))
   .catch((er) => console.error(er));
+
+let marks = [1, 2, 3, 4, 5];
+function total() {
+  return new Promise((resolve, reject) => {
+    if (marks.length <= 0) reject("Not a valid input");
+    resolve(marks.reduce((a, b) => a + b));
+  });
+}
+
+function avg(total) {
+  return new Promise((resolve, reject) => {
+    if (total <= 0) reject("not a valid total number");
+    resolve(total / marks.length);
+  });
+}
+
+function grade(avg) {
+  return new Promise((resolve, reject) => {
+    if (avg <= 0) reject("not a valid average");
+    resolve("A");
+  });
+}
+
+total().then(tot => {
+    avg(tot).then(av => {
+        grade()
+    })
+})
