@@ -1,8 +1,25 @@
-const baseURL = "https://63539e82ccce2f8c02f9ceee.mockapi.io/";
+const baseURL = "https://63539e82ccce2f8c02f9ceee.mockapi.io";
+let allDetails = [];
+
+let searchText = document.getElementById("txt");
+searchText.addEventListener("keyup", (event) => {
+  if (allDetails.length === 0) getAllDetails();
+  if (event.target.value.length > 0 && event.target.value.length < 3) return;
+  if (event.target.value.length === 0) populateGrid(allDetails);
+
+  const filteredData = allDetails.filter((x) =>
+    x.name.toLowerCase().includes(event.target.value.trim().toLowerCase())
+  );
+
+  populateGrid(filteredData);
+});
 
 const getAllDetails = async () => {
   const response = await fetch(`${baseURL}/api`);
-  populateGrid(await response.json());
+  const result = await response.json();
+  allDetails = [];
+  allDetails = [...result];
+  populateGrid(allDetails);
 };
 
 const populateGrid = (data) => {
