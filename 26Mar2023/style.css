@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --default-pad-0: 0;
+  --primary-bg: red;
+  --primary-ff: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: var(--default-pad-0);
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  min-width: 100%;
+  overflow-x: hidden;
+  /* background-color: var(--primary-bg); */
+  font-family: var(--primary-ff);
+}
+
+/* button {
+  margin: 10px 20px;
+  border: 0;
+  background-color: #051937;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 5s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #051937;
+  border: 1px solid #051937;
+} */
+
+/* #txt {
+  margin: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+} */
+
+/* #parent {
+  border: 1px solid red;
+  margin: 10px;
+  display: flex;
+  /* x axis */
+/* justify-content: space-around; */
+/* flex-direction: row; */
+/* height: 80px; */
+/* y axis */
+/* align-items: center; */
+/* }  */
+
+/* menu bar design */
+nav {
+  display: flex;
+  width: 80%;
+  height: 65px;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  -webkit-box-shadow: 0px 4px 22px -7px rgba(112, 112, 112, 1);
+  -moz-box-shadow: 0px 4px 22px -7px rgba(112, 112, 112, 1);
+  box-shadow: 0px 4px 22px -7px rgba(112, 112, 112, 1);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#logo {
+  width: 15%;
+}
+
+#menu-items {
+  width: 85%;
+}
+
+.btn-ordinary {
+  border: none;
+  background-color: transparent;
+  color: green;
+  font-weight: 700;
+}
+
+.btn-special {
+  border: none;
+  background-color: green;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
