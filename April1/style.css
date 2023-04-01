@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --primary-bg: #000000;
+  --primary-ff: "Poppins", sans-serif;
+  --primary-fc: #e7e7e9;
+  --primary-fs: 14px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-ff);
+  background: var(--primary-bg);
+  color: var(--primary-fc);
+  min-width: 100%;
+  overflow-x: hidden;
+  font-size: var(--primary-fs);
+}
+
+.container {
+  width: 90%;
+  /* display: flex; */
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  width: 100%;
+  border-bottom: 1px solid var(--primary-fc);
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+  gap: 3em;
+  padding-left: 4em;
+}
+
+li {
+  cursor: pointer;
+}
+
+#logo {
+  width: 10%;
+  font-size: 1.5em;
+  cursor: pointer;
+  /* position: relative; */
+}
+
+#logo-char {
+  color: teal;
+  font-weight: 700;
+  font-size: 2em;
+  /* position: absolute; */
+  /* left: 0; */
+}
+
+#signup-container {
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-fc);
+}
+
+#header {
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+  padding: 3em 0;
+}
+
+#left-col {
+  width: 50%;
+}
+#right-col {
+  width: 50%;
+}
+
+#desc {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+#blk {
+  display: block;
+  position: relative;
+}
+
+#rigth-col {
+  display: flex;
+  justify-content: center;
+}
+
+#header-footer {
+  display: flex;
+  place-content: space-between;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+
+.head {
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid orange;
+  box-shadow: -1px 1px 7px 9px rgba(252, 186, 3, 0.19);
+  -webkit-box-shadow: -1px 1px 7px 9px rgba(252, 186, 3, 0.189);
+  -moz-box-shadow: -1px 1px 7px 9px rgba(252, 186, 3, 0.19);
+}
+
+#second {
+  position: absolute;
+  left: 36px;
+  bottom: 23px;
+}
+
+#third {
+  position: relative;
+}
